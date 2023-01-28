@@ -1,0 +1,188 @@
+/* Hero Image */
+#heroImage {
+    position: relative;
+}
+
+#heroImage img {
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 4em;
+}
+
+#heroImage #heroText {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    text-shadow: 1px 0 0 #09009a, 0 -3px 0 #09009a, 0 1px 0 #09009a, -1px 0 0 #09009a;
+    margin-left: 2em;
+    padding: 1em;
+}
+
+#order {
+    border: 2px solid black;
+    background-color: white;
+}
+
+#order:hover {
+    background-color: lavender;
+}
+
+#order a {
+    text-decoration: none;
+    color: #09009a;
+    font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+
+/* Food Items Nav */
+h1 {
+    text-align: center;
+    color: #09009a;
+}
+
+#foodItems {
+    text-align: center;
+    margin-top: 2em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#foodItems button {
+    text-align: center;
+    width: 6em;
+    margin: 0 2em 0 2em;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.3em;
+    border: 2px solid black;
+}
+
+#foodItems button:hover {
+    color: #09009a;
+    background-color: aliceblue;
+}
+
+#foodItems .clicked {
+    color: #09009a;
+    background-color: aliceblue;
+}
+
+/* Food Image + Description */
+#foodDisplay {
+    margin: 3em 5em 7em 5em;
+    /* border: 5px solid black; */
+}
+
+#foodPic {
+    height: 50vh;
+    width: auto;
+}
+
+#foodPic img {
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid lavender;
+    margin-left: 4em;
+}
+
+#foodDescript {
+    /* border: 2px solid lavender; */
+    border-radius: 5px;
+    text-align: center;
+    margin: 5em 6em 5em 7em;
+}
+
+.descript {
+    padding: 1.5em 1.5em 0.5em 1.5em;
+    border-bottom: 3px solid lavender;
+    margin-bottom: .5em;
+    text-align: left;
+}
+
+.descript h4 {
+    font-weight: bold;
+}
+
+#foodDescript button {
+    margin-bottom: .5em;
+}
+
+#foodDescript button a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* About */
+#about {
+    margin: 6em 20% 7em 20%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Carousel */
+.carousel {
+    margin: 2em;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 30rem;
+    width: auto;
+}
+
+/* Mobile-Responsive */
+@media only screen and (max-width: 1280px) {
+    #heroImage #heroText {
+        font-size: 2em;
+        top: 20%;
+    }
+
+    #foodItems button {
+        margin: 0 1em 0 1em;
+        width: auto;
+    }
+
+    #foodDisplay {
+        margin: 3em 5em 7em 5em;
+    }
+    
+    #foodPic {
+        height: auto;
+    }
+    
+    #foodPic img {
+        margin-left: 0;
+    }
+    
+    #foodDescript {
+        margin: 5em 0 5em 0;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    #heroImage #heroText {
+        font-size: 2em;
+        top: 20%;
+        margin-left: 0;
+    }
+    
+    #foodItems button {
+        margin: 0;
+        width: auto;
+    }
+
+    #foodPic img {
+        margin-left: 0;
+    }
+    
+    #foodDescript {
+        margin: 0;
+        border: none;
+    }
+}

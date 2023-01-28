@@ -1,0 +1,113 @@
+/* Hero Image */
+#heroImage {
+    position: relative;
+}
+
+#heroImage img {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
+#heroImage #heroText {
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    left: 30%;
+    right: 30%;
+}
+
+#heroText h1{
+    text-align: center;
+    font-size: 5em;
+}
+
+/* Menu Items */
+#menuItems {
+    text-align: center;
+    margin: 4em 20% 0 20%;
+    padding: 0.5em;
+    border: 2px solid lavender;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px lavender;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#menuItems a{
+    font-size: 1.5em;
+    margin: 0 2em 0 2em;
+    width: 6em;
+    text-decoration: none;
+    color: #09009a;
+}
+
+#menu {
+    margin: 0 3em 0 3em;
+}
+
+#menu .section {
+    padding-top: 5.5em;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#menu .section h5 {
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.foods div {
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 3.5em;
+    margin-bottom: 2em;
+}
+
+.foods img {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 1em;
+    border: 2px solid lavender;
+    border-radius: 15px;
+}
+
+.foods div:hover {
+    transform: scale(1.1);
+}
+
+.foods p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/* Modals */
+.modal span {
+    font-size: 0.75em;
+}
+
+/* Mobile-Responsive */
+@media only screen and (max-width: 1280px) {
+    #menuItems {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #menuItems a {
+        margin: 0 1em 0 1em;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    #menuItems {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #menuItems a {
+        margin: 0 3em 0 3em;
+    }
+}
